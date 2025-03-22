@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://mirrors.sustech.edu.cn/cdnjs/ajax/libs/Primer/21.0.7/primer.css' rel='stylesheet' />
+    
+    <link rel="icon" href="https://www.fkunet.top/img/weblogo.png"><script>
+        let theme = localStorage.getItem("meek_theme") || "light";
+        document.documentElement.setAttribute("data-color-mode", theme);
+    </script>
+<meta name="description" content="互联网劫持：技术实施与防范策略
+互联网劫持是指通过各种技术手段篡改、操控或注入数据流量的行为,😃🏈🏈🏋️🏍️，以达到特定目的，如获取用户信息、插入广告或劫持用户访问。">
+<meta property="og:title" content="互联网劫持：技术实施与防范策略">
+<meta property="og:description" content="互联网劫持：技术实施与防范策略
+互联网劫持是指通过各种技术手段篡改、操控或注入数据流量的行为,😃🏈🏈🏋️🏍️，以达到特定目的，如获取用户信息、插入广告或劫持用户访问。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://zhangyong08.github.io/post/hu-lian-wang-jie-chi-%EF%BC%9A-ji-shu-shi-shi-yu-fang-fan-ce-lve.html">
+<meta property="og:image" content="https://www.fkunet.top/img/weblogo.png">
+<title>互联网劫持：技术实施与防范策略</title>
+
+
+
+</head>
+<style>
+body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;padding: 45px;font-size: 16px;font-family: sans-serif;line-height: 1.25;}
+#header{display:flex;padding-bottom:8px;border-bottom: 1px solid var(--borderColor-muted, var(--color-border-muted));margin-bottom: 16px;}
+#footer {margin-top:64px; text-align: center;font-size: small;}
+
+</style>
+
+<style>
+.postTitle{margin: auto 0;font-size:40px;font-weight:bold;}
+.title-right{display:flex;margin:auto 0 0 auto;}
+.title-right .circle{padding: 14px 16px;margin-right:8px;}
+#postBody{border-bottom: 1px solid var(--color-border-default);padding-bottom:36px;}
+#postBody hr{height:2px;}
+#cmButton{height:48px;margin-top:48px;}
+#comments{margin-top:64px;}
+.g-emoji{font-size:24px;}
+@media (max-width: 600px) {
+    body {padding: 8px;}
+    .postTitle{font-size:24px;}
+}
+
+</style>
+
+
+
+
+<body>
+    <div id="header">
+<h1 class="postTitle">互联网劫持：技术实施与防范策略</h1>
+<div class="title-right">
+    <a href="https://zhangyong08.github.io" id="buttonHome" class="btn btn-invisible circle" title="首页">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathHome" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+    <a href="https://github.com/zhangyong08/zhangyong08.github.io/issues/2" target="_blank" class="btn btn-invisible circle" title="Issue">
+        <svg class="octicon" width="16" height="16">
+            <path id="pathIssue" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+    
+
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+        <svg class="octicon" width="16" height="16" >
+            <path id="themeSwitch" fill-rule="evenodd"></path>
+        </svg>
+    </a>
+
+</div>
+</div>
+    <div id="content">
+<div class="markdown-body" id="postBody"><p>互联网劫持：技术实施与防范策略<br>
+互联网劫持是指通过各种技术手段篡改、操控或注入数据流量的行为,😃🏈🏈🏋️🏍️，以达到特定目的，如获取用户信息、插入广告或劫持用户访问。以下将详细探讨几种常见的互联网劫持形式及其技术实施方式，并提供一些解决方案。<br>
+您仅需一个软件即可实施运营商劫持 <a href="http://www.fkunet.top" rel="nofollow">www.fkunet.top</a></p>
+<p><a target="_blank" rel="noopener noreferrer" href="https://github.com/user-attachments/assets/7caeb772-f87d-43b0-ba69-2ca7d96a682a"><img src="https://github.com/user-attachments/assets/7caeb772-f87d-43b0-ba69-2ca7d96a682a" alt="Image" style="max-width: 100%;"></a></p>
+<p><strong>1. 运营商劫持与ISP劫持</strong><br>
+运营商劫持和ISP劫持是指互联网服务提供商（ISP）通过控制网络流量，篡改或插入广告、修改请求内容等行为，从而干扰用户的网络体验。这类劫持通常通过以下几种方式进行：</p>
+<p>DNS劫持：运营商或ISP通过篡改DNS解析过程，将用户请求的域名指向恶意或广告页面。这样一来，当用户访问合法网站时，实际上会被引导到不相关的广告或恶意网站。</p>
+<p>HTTPS劫持：HTTPS流量加密后，运营商通过中间人攻击（MITM）手段解密流量，插入广告或篡改网页内容。虽然HTTPS协议提供了加密保护，但如果运营商或ISP能够访问用户的加密流量，他们就可以插入广告或修改数据。</p>
+<p>流量劫持：运营商或ISP可以通过透明代理等方式拦截用户的网络流量，并在其中插入广告或重定向流量到指定网站。此类劫持通常涉及深度数据包检测和内容注入。</p>
+<p><strong>2. 运营商广告注入</strong><br>
+运营商广告注入是指运营商通过篡改用户的网络请求，强行在网页中插入广告。这种广告通常是弹窗广告、横幅广告或页面间隙广告等形式。其技术实施方式主要包括：</p>
+<p>HTTP头注入：通过篡改HTTP响应头，注入JavaScript代码或重定向代码，强行将广告内容插入用户浏览的网页中。</p>
+<p>JavaScript注入：通过插入恶意JavaScript代码，使得网页在加载时动态插入广告，甚至改变网页内容或重定向用户到广告页面。</p>
+<p><strong>3. 302劫持与网页劫持</strong><br>
+302劫持是指通过HTTP 302重定向状态码，将用户请求引导到另一个URL地址。这通常被恶意使用来将用户引导到广告页面或恶意网站。其技术实现方式如下：</p>
+<p>HTTP 302重定向：运营商或ISP通过拦截HTTP请求并修改响应头中的302状态码，将用户请求重定向到广告网站或其他恶意站点。</p>
+<p>网页劫持：在网页加载时，恶意代码或运营商通过篡改网页内容，使其显示广告或将用户重定向到其他网页。这样的行为通常通过修改HTML、JavaScript代码来实现。</p>
+<p><strong>4. 运营商插入广告与弹窗广告</strong><br>
+运营商插入广告和弹窗广告是最常见的广告劫持方式。运营商利用透明代理、DNS劫持等技术，将广告强行插入到用户访问的网页中，甚至通过弹窗广告干扰用户体验。</p>
+<p>透明代理：运营商通过中间代理服务器拦截用户请求，并在用户访问的网页中注入广告内容。这个过程对用户来说是隐形的，他们无法察觉到自己的流量被篡改。</p>
+<p>弹窗广告注入：通过JavaScript或HTML注入广告代码，在用户访问网页时弹出广告窗口，通常是全屏的或遮挡整个页面的广告。</p>
+<p><strong>5. DNS劫持检测与防范</strong><br>
+DNS劫持是通过篡改DNS解析记录，将合法域名指向恶意网站。用户通常无法察觉这种篡改，因此DNS劫持检测显得尤为重要。常见的DNS劫持检测方法包括：</p>
+<p>比对DNS响应：通过查询不同DNS服务器的响应，检查是否存在域名解析的异常。如果发现解析的IP地址与预期的不一致，就有可能是DNS劫持。</p>
+<p>使用加密DNS：通过使用DNS over HTTPS (DoH) 或 DNS over TLS (DoT) 协议，可以防止DNS请求被中间人篡改，提高安全性。</p>
+<p><strong>6. 解决方案与防护措施</strong><br>
+面对各种互联网劫持的威胁，采取有效的防护措施至关重要。以下是几种常见的解决方案：</p>
+<p>使用VPN：通过虚拟私人网络（VPN）加密用户的互联网流量，避免流量被ISP或运营商劫持。VPN可以帮助用户绕过ISP的流量监控和广告注入。</p>
+<p>HTTPS加密：使用HTTPS协议来确保数据传输的加密性，防止流量被中间人攻击或篡改。特别是对敏感数据进行加密，确保其安全。</p>
+<p>DNS安全：使用受信任的DNS服务器（如Google DNS、Cloudflare DNS等）以及加密DNS（DoH或DoT）来防止DNS劫持。</p>
+<p>浏览器插件：安装广告拦截插件（如Adblock Plus、uBlock Origin等）可以有效拦截广告注入，并减少网页劫持的风险。</p>
+<p>反劫持技术：通过引入反劫持工具和技术，如HTTP严格传输安全（HSTS）和内容安全策略（CSP），增强网页和用户数据的安全性。</p>
+<p>结语<br>
+互联网劫持是一种常见的网络攻击方式，能够通过篡改流量、插入广告、重定向流量等手段对用户造成影响。随着网络安全技术的不断发展，越来越多的解决方案可以帮助用户识别和防范各种劫持攻击。无论是通过加密通信、使用VPN，还是通过DNS安全和广告拦截工具，用户都可以采取措施增强自己在互联网中的安全性，避免成为互联网劫持的受害者。</p></div>
+<div style="font-size:small;margin-top:8px;float:right;"></div>
+
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<div class="comments" id="comments"></div>
+
+</div>
+    <div id="footer"><div id="footer1">Copyright © <span id="copyrightYear"></span> <a href="https://zhangyong08.github.io">运营商劫持</a></div>
+<div id="footer2">
+    <span id="runday"></span><span>Powered by <a href="https://meekdai.com/Gmeek.html" target="_blank">Gmeek</a></span>
+</div>
+
+<script>
+var now=new Date();
+document.getElementById("copyrightYear").innerHTML=now.getFullYear();
+
+if(""!=""){
+    var startSite=new Date("");
+    var diff=now.getTime()-startSite.getTime();
+    var diffDay=Math.floor(diff/(1000*60*60*24));
+    document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";
+}
+</script></div>
+</body>
+<script>
+var IconList={'sun': 'M8 10.5a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8 12a4 4 0 100-8 4 4 0 000 8zM8 0a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0V.75A.75.75 0 018 0zm0 13a.75.75 0 01.75.75v1.5a.75.75 0 01-1.5 0v-1.5A.75.75 0 018 13zM2.343 2.343a.75.75 0 011.061 0l1.06 1.061a.75.75 0 01-1.06 1.06l-1.06-1.06a.75.75 0 010-1.06zm9.193 9.193a.75.75 0 011.06 0l1.061 1.06a.75.75 0 01-1.06 1.061l-1.061-1.06a.75.75 0 010-1.061zM16 8a.75.75 0 01-.75.75h-1.5a.75.75 0 010-1.5h1.5A.75.75 0 0116 8zM3 8a.75.75 0 01-.75.75H.75a.75.75 0 010-1.5h1.5A.75.75 0 013 8zm10.657-5.657a.75.75 0 010 1.061l-1.061 1.06a.75.75 0 11-1.06-1.06l1.06-1.06a.75.75 0 011.06 0zm-9.193 9.193a.75.75 0 010 1.06l-1.06 1.061a.75.75 0 11-1.061-1.06l1.06-1.061a.75.75 0 011.061 0z', 'moon': 'M9.598 1.591a.75.75 0 01.785-.175 7 7 0 11-8.967 8.967.75.75 0 01.961-.96 5.5 5.5 0 007.046-7.046.75.75 0 01.175-.786zm1.616 1.945a7 7 0 01-7.678 7.678 5.5 5.5 0 107.678-7.678z', 'sync': 'M1.705 8.005a.75.75 0 0 1 .834.656 5.5 5.5 0 0 0 9.592 2.97l-1.204-1.204a.25.25 0 0 1 .177-.427h3.646a.25.25 0 0 1 .25.25v3.646a.25.25 0 0 1-.427.177l-1.38-1.38A7.002 7.002 0 0 1 1.05 8.84a.75.75 0 0 1 .656-.834ZM8 2.5a5.487 5.487 0 0 0-4.131 1.869l1.204 1.204A.25.25 0 0 1 4.896 6H1.25A.25.25 0 0 1 1 5.75V2.104a.25.25 0 0 1 .427-.177l1.38 1.38A7.002 7.002 0 0 1 14.95 7.16a.75.75 0 0 1-1.49.178A5.5 5.5 0 0 0 8 2.5Z', 'home': 'M6.906.664a1.749 1.749 0 0 1 2.187 0l5.25 4.2c.415.332.657.835.657 1.367v7.019A1.75 1.75 0 0 1 13.25 15h-3.5a.75.75 0 0 1-.75-.75V9H7v5.25a.75.75 0 0 1-.75.75h-3.5A1.75 1.75 0 0 1 1 13.25V6.23c0-.531.242-1.034.657-1.366l5.25-4.2Zm1.25 1.171a.25.25 0 0 0-.312 0l-5.25 4.2a.25.25 0 0 0-.094.196v7.019c0 .138.112.25.25.25H5.5V8.25a.75.75 0 0 1 .75-.75h3.5a.75.75 0 0 1 .75.75v5.25h2.75a.25.25 0 0 0 .25-.25V6.23a.25.25 0 0 0-.094-.195Z', 'github': 'M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z'};
+var utterancesLoad=0;
+
+let themeSettings={
+    "dark": ["dark","moon","#00f0ff","dark-blue"],
+    "light": ["light","sun","#ff5000","github-light"],
+    "auto": ["auto","sync","","preferred-color-scheme"]
+};
+function changeTheme(mode, icon, color, utheme){
+    document.documentElement.setAttribute("data-color-mode",mode);
+    document.getElementById("themeSwitch").setAttribute("d",value=IconList[icon]);
+    document.getElementById("themeSwitch").parentNode.style.color=color;
+    if(utterancesLoad==1){utterancesTheme(utheme);}
+}
+function modeSwitch(){
+    let currentMode=document.documentElement.getAttribute('data-color-mode');
+    let newMode = currentMode === "light" ? "dark" : currentMode === "dark" ? "auto" : "light";
+    localStorage.setItem("meek_theme", newMode);
+    if(themeSettings[newMode]){
+        changeTheme(...themeSettings[newMode]);
+    }
+}
+function utterancesTheme(theme){
+    const message={type:'set-theme',theme: theme};
+    const iframe=document.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message,'https://utteranc.es');
+}
+if(themeSettings[theme]){changeTheme(...themeSettings[theme]);}
+console.log("\n %c Gmeek last https://github.com/Meekdai/Gmeek \n","padding:5px 0;background:#02d81d;color:#fff");
+</script>
+
+<script>
+document.getElementById("pathHome").setAttribute("d",IconList["home"]);
+document.getElementById("pathIssue").setAttribute("d",IconList["github"]);
+
+
+
+function openComments(){
+    cm=document.getElementById("comments");
+    cmButton=document.getElementById("cmButton");
+    cmButton.innerHTML="loading";
+    span=document.createElement("span");
+    span.setAttribute("class","AnimatedEllipsis");
+    cmButton.appendChild(span);
+
+    script=document.createElement("script");
+    script.setAttribute("src","https://utteranc.es/client.js");
+    script.setAttribute("repo","zhangyong08/zhangyong08.github.io");
+    script.setAttribute("issue-term","title");
+    
+    if(localStorage.getItem("meek_theme")=="dark"){script.setAttribute("theme","dark-blue");}
+    else if(localStorage.getItem("meek_theme")=="light") {script.setAttribute("theme","github-light");}
+    else{script.setAttribute("theme","preferred-color-scheme");}
+    
+    script.setAttribute("crossorigin","anonymous");
+    script.setAttribute("async","");
+    cm.appendChild(script);
+
+    int=self.setInterval("iFrameLoading()",200);
+}
+
+function iFrameLoading(){
+    var utterances=document.getElementsByClassName('utterances');
+    if(utterances.length==1){
+        if(utterances[0].style.height!=""){
+            utterancesLoad=1;
+            int=window.clearInterval(int);
+            document.getElementById("cmButton").style.display="none";
+            console.log("utterances Load OK");
+        }
+    }
+}
+
+
+
+</script>
+
+
+</html>
